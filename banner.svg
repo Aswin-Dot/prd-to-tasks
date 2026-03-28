@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#0e0a1a"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7cf7"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b7cf7" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#8b7cf7"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="prdPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161625"/>
+      <stop offset="100%" stop-color="#111120"/>
+    </linearGradient>
+    <linearGradient id="taskPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161625"/>
+      <stop offset="100%" stop-color="#111120"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg2)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="16" cy="16" r="0.8" fill="#ffffff" opacity="0.05"/>
+  </pattern>
+  <rect width="1280" height="640" fill="url(#dots)"/>
+
+  <!-- Ambient glow -->
+  <circle cx="640" cy="320" r="300" fill="#8b7cf7" opacity="0.03" filter="url(#glow2)"/>
+
+  <!-- Title -->
+  <text x="640" y="100" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="white" letter-spacing="-2">prd-to-tasks</text>
+
+  <!-- Accent underline -->
+  <rect x="510" y="118" width="260" height="4" rx="2" fill="url(#purpleGrad)"/>
+
+  <!-- Subtitle -->
+  <text x="640" y="158" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#8a8aaa" letter-spacing="0.3">Paste a PRD, get structured dev tasks -- ready for Jira or Notion</text>
+
+  <!-- Left Panel: PRD Document -->
+  <g transform="translate(115, 200)">
+    <rect width="380" height="380" rx="16" fill="url(#prdPanel)" stroke="#252540" stroke-width="1"/>
+
+    <!-- Panel header -->
+    <rect width="380" height="44" rx="16" fill="#1a1a30"/>
+    <rect y="30" width="380" height="14" fill="#1a1a30"/>
+    <!-- Window dots -->
+    <circle cx="22" cy="22" r="5" fill="#ff5f57"/>
+    <circle cx="40" cy="22" r="5" fill="#febc2e"/>
+    <circle cx="58" cy="22" r="5" fill="#28c840"/>
+    <text x="190" y="27" text-anchor="middle" font-family="monospace" font-size="12" fill="#5a5a7a">product-requirements.md</text>
+
+    <!-- PRD content lines -->
+    <text x="24" y="75" font-family="monospace" font-size="13" fill="#8b7cf7" font-weight="600"># Product Requirements</text>
+
+    <text x="24" y="100" font-family="monospace" font-size="12" fill="#6a6a8a">## Overview</text>
+    <rect x="24" y="110" width="280" height="8" rx="4" fill="#2a2a45" opacity="0.8"/>
+    <rect x="24" y="124" width="320" height="8" rx="4" fill="#2a2a45" opacity="0.6"/>
+    <rect x="24" y="138" width="240" height="8" rx="4" fill="#2a2a45" opacity="0.5"/>
+
+    <text x="24" y="168" font-family="monospace" font-size="12" fill="#6a6a8a">## User Stories</text>
+    <rect x="24" y="178" width="300" height="8" rx="4" fill="#2a2a45" opacity="0.7"/>
+    <rect x="24" y="192" width="260" height="8" rx="4" fill="#2a2a45" opacity="0.55"/>
+    <rect x="24" y="206" width="310" height="8" rx="4" fill="#2a2a45" opacity="0.6"/>
+    <rect x="24" y="220" width="220" height="8" rx="4" fill="#2a2a45" opacity="0.45"/>
+
+    <text x="24" y="250" font-family="monospace" font-size="12" fill="#6a6a8a">## Acceptance Criteria</text>
+    <rect x="24" y="260" width="290" height="8" rx="4" fill="#2a2a45" opacity="0.65"/>
+    <rect x="24" y="274" width="330" height="8" rx="4" fill="#2a2a45" opacity="0.5"/>
+    <rect x="24" y="288" width="250" height="8" rx="4" fill="#2a2a45" opacity="0.55"/>
+
+    <text x="24" y="318" font-family="monospace" font-size="12" fill="#6a6a8a">## Technical Notes</text>
+    <rect x="24" y="328" width="270" height="8" rx="4" fill="#2a2a45" opacity="0.5"/>
+    <rect x="24" y="342" width="310" height="8" rx="4" fill="#2a2a45" opacity="0.4"/>
+    <rect x="24" y="356" width="200" height="8" rx="4" fill="#2a2a45" opacity="0.35"/>
+  </g>
+
+  <!-- Arrow in the middle -->
+  <g transform="translate(520, 370)">
+    <line x1="0" y1="0" x2="200" y2="0" stroke="url(#arrowGrad)" stroke-width="3" stroke-dasharray="8 4"/>
+    <polygon points="200,-8 220,0 200,8" fill="#8b7cf7"/>
+    <!-- Label above arrow -->
+    <rect x="60" y="-30" width="80" height="24" rx="12" fill="#1a1a30" stroke="#8b7cf7" stroke-width="1"/>
+    <text x="100" y="-13" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b7cf7">parse</text>
+  </g>
+
+  <!-- Right Panel: Task Cards -->
+  <g transform="translate(785, 200)">
+    <rect width="380" height="380" rx="16" fill="url(#taskPanel)" stroke="#252540" stroke-width="1"/>
+
+    <!-- Panel header -->
+    <rect width="380" height="44" rx="16" fill="#1a1a30"/>
+    <rect y="30" width="380" height="14" fill="#1a1a30"/>
+    <circle cx="22" cy="22" r="5" fill="#ff5f57"/>
+    <circle cx="40" cy="22" r="5" fill="#febc2e"/>
+    <circle cx="58" cy="22" r="5" fill="#28c840"/>
+    <text x="190" y="27" text-anchor="middle" font-family="monospace" font-size="12" fill="#5a5a7a">generated-tasks.json</text>
+
+    <!-- Task Card 1 - P1 -->
+    <g transform="translate(16, 58)">
+      <rect width="348" height="68" rx="10" fill="#1e1e35" stroke="#2a2a48" stroke-width="1"/>
+      <rect x="12" y="12" width="32" height="20" rx="6" fill="#ef4444" opacity="0.9"/>
+      <text x="28" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">P1</text>
+      <text x="54" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e0e0f0">Set up auth service with JWT</text>
+      <rect x="12" y="40" width="180" height="7" rx="3" fill="#2a2a4a" opacity="0.6"/>
+      <rect x="12" y="52" width="120" height="7" rx="3" fill="#2a2a4a" opacity="0.4"/>
+      <rect x="290" y="12" width="46" height="20" rx="6" fill="#1a1a3a" stroke="#3a3a5a" stroke-width="1"/>
+      <text x="313" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#6a6a8a">BE</text>
+    </g>
+
+    <!-- Task Card 2 - P1 -->
+    <g transform="translate(16, 136)">
+      <rect width="348" height="68" rx="10" fill="#1e1e35" stroke="#2a2a48" stroke-width="1"/>
+      <rect x="12" y="12" width="32" height="20" rx="6" fill="#ef4444" opacity="0.9"/>
+      <text x="28" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">P1</text>
+      <text x="54" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e0e0f0">Build onboarding flow UI</text>
+      <rect x="12" y="40" width="200" height="7" rx="3" fill="#2a2a4a" opacity="0.6"/>
+      <rect x="12" y="52" width="140" height="7" rx="3" fill="#2a2a4a" opacity="0.4"/>
+      <rect x="290" y="12" width="46" height="20" rx="6" fill="#1a1a3a" stroke="#3a3a5a" stroke-width="1"/>
+      <text x="313" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#6a6a8a">FE</text>
+    </g>
+
+    <!-- Task Card 3 - P2 -->
+    <g transform="translate(16, 214)">
+      <rect width="348" height="68" rx="10" fill="#1e1e35" stroke="#2a2a48" stroke-width="1"/>
+      <rect x="12" y="12" width="32" height="20" rx="6" fill="#f59e0b" opacity="0.9"/>
+      <text x="28" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">P2</text>
+      <text x="54" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e0e0f0">Add analytics event tracking</text>
+      <rect x="12" y="40" width="160" height="7" rx="3" fill="#2a2a4a" opacity="0.6"/>
+      <rect x="12" y="52" width="100" height="7" rx="3" fill="#2a2a4a" opacity="0.4"/>
+      <rect x="290" y="12" width="46" height="20" rx="6" fill="#1a1a3a" stroke="#3a3a5a" stroke-width="1"/>
+      <text x="313" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#6a6a8a">FE</text>
+    </g>
+
+    <!-- Task Card 4 - P3 -->
+    <g transform="translate(16, 292)">
+      <rect width="348" height="68" rx="10" fill="#1e1e35" stroke="#2a2a48" stroke-width="1"/>
+      <rect x="12" y="12" width="32" height="20" rx="6" fill="#22c55e" opacity="0.9"/>
+      <text x="28" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">P3</text>
+      <text x="54" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#e0e0f0">Write API documentation</text>
+      <rect x="12" y="40" width="190" height="7" rx="3" fill="#2a2a4a" opacity="0.6"/>
+      <rect x="12" y="52" width="130" height="7" rx="3" fill="#2a2a4a" opacity="0.4"/>
+      <rect x="290" y="12" width="46" height="20" rx="6" fill="#1a1a3a" stroke="#3a3a5a" stroke-width="1"/>
+      <text x="313" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#6a6a8a">DOC</text>
+    </g>
+  </g>
+
+  <!-- Watermark -->
+  <text x="1260" y="625" text-anchor="end" font-family="monospace" font-size="12" fill="#3a3a5a">github.com/Aswin-Dot/prd-to-tasks</text>
+</svg>

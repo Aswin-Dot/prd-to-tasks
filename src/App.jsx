@@ -88,9 +88,9 @@ function App() {
           <footer className="mt-12 text-center text-sm text-text-dim">
             <p>
               Built with Claude API by Anthropic · 
-              <a 
-                href="https://github.com" 
-                target="_blank" 
+              <a
+                href="https://github.com/Aswin-Dot/prd-to-tasks"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-accent transition-colors ml-1"
               >

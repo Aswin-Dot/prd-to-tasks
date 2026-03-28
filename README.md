@@ -1,5 +1,7 @@
 # prd-to-tasks
 
+![prd-to-tasks banner](./banner.png)
+
 **Paste a product requirement, get structured dev tasks with context, priority, and effort — ready to drop into Jira or Notion.**
 
 ---
