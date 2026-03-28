@@ -1,8 +1,15 @@
 {
   "name": "prd-to-tasks",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Paste a product requirement, get structured dev tasks with context, priority, and effort — ready to drop into Jira or Notion.",
   "type": "module",
+  "homepage": "https://aswin-dot.github.io/prd-to-tasks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aswin-Dot/prd-to-tasks.git"
+  },
+  "author": "Aswin Raj",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

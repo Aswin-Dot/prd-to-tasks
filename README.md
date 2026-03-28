@@ -20,12 +20,6 @@ No more back-and-forth. No more "what does this mean?" Just paste and go.
 
 ---
 
-## Screenshot
-
-![prd-to-tasks screenshot](https://via.placeholder.com/1200x630/111118/8b7cf7?text=prd-to-tasks)
-
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -37,7 +31,7 @@ No more back-and-forth. No more "what does this mean?" Just paste and go.
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/prd-to-tasks.git
+git clone https://github.com/Aswin-Dot/prd-to-tasks.git
 cd prd-to-tasks
 
 # Install dependencies
@@ -127,13 +121,13 @@ Prevent referral abuse by detecting self-referrals, device fingerprint matches, 
 
 ## Live Demo
 
-🚀 **[prd-to-tasks.vercel.app](https://prd-to-tasks.vercel.app)**
+**[aswin-dot.github.io/prd-to-tasks](https://aswin-dot.github.io/prd-to-tasks)**
 
 ---
 
 ## License
 
-MIT — do whatever you want with it.
+MIT
 
 ---
 
@@ -147,4 +141,4 @@ Issues and PRs welcome. If you're adding features, please:
 
 ---
 
-Built with ⚡ by developers who got tired of the PRD → task handoff dance.
+*Built by [Aswin Raj](https://github.com/Aswin-Dot)*
